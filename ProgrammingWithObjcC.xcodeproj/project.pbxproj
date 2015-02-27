@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		220D443F1AA00E0B009AFEBD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 220D443E1AA00E0B009AFEBD /* main.m */; };
 		220D44461AA00E45009AFEBD /* XYZPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = 220D44451AA00E45009AFEBD /* XYZPerson.m */; };
+		226A88D61AA1303A00B52799 /* XYZShoutingPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = 226A88D51AA1303A00B52799 /* XYZShoutingPerson.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -28,6 +29,8 @@
 		220D443E1AA00E0B009AFEBD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		220D44451AA00E45009AFEBD /* XYZPerson.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYZPerson.m; sourceTree = "<group>"; };
 		220D44481AA00EF8009AFEBD /* XYZPerson.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XYZPerson.h; sourceTree = "<group>"; };
+		226A88D41AA12F9800B52799 /* XYZShoutingPerson.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = XYZShoutingPerson.h; path = ../XYZShoutingPerson.h; sourceTree = "<group>"; };
+		226A88D51AA1303A00B52799 /* XYZShoutingPerson.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYZShoutingPerson.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,8 +64,10 @@
 			isa = PBXGroup;
 			children = (
 				220D443E1AA00E0B009AFEBD /* main.m */,
+				226A88D41AA12F9800B52799 /* XYZShoutingPerson.h */,
 				220D44451AA00E45009AFEBD /* XYZPerson.m */,
 				220D44481AA00EF8009AFEBD /* XYZPerson.h */,
+				226A88D51AA1303A00B52799 /* XYZShoutingPerson.m */,
 			);
 			path = ProgrammingWithObjcC;
 			sourceTree = "<group>";
@@ -124,6 +129,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				220D44461AA00E45009AFEBD /* XYZPerson.m in Sources */,
+				226A88D61AA1303A00B52799 /* XYZShoutingPerson.m in Sources */,
 				220D443F1AA00E0B009AFEBD /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -238,6 +244,7 @@
 				220D44441AA00E0B009AFEBD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

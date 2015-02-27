@@ -12,12 +12,21 @@
 @implementation XYZPerson
 
 + (XYZPerson *)person {
-    return [XYZPerson new];
+    return [self new];
 }
 
 - (void)sayHello {
     [self saySomething:@"Hello, world!"];
 }
+
+-(void)sayGoodbye {
+    [self saySomething:@"Goodbye, y'all!"];
+}
+
+-(void)sayGoodnight {
+    [self saySomething:@"Gute Nacht zusammen!"];
+}
+
 - (void)saySomething:(NSString *)greeting {
     NSLog(@"%@", greeting);
 }

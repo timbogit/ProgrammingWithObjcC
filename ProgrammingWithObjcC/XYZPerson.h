@@ -18,6 +18,8 @@
 +(XYZPerson *)person;
 
 -(void)sayHello;
+-(void)sayGoodbye;
+-(void)sayGoodnight;
 -(void)saySomething:(NSString *)greeting;
 
 
