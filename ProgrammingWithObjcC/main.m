@@ -11,8 +11,8 @@
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
-        // insert code here...
-        NSLog(@"About to let a person say Hello!");
+        NSString *revisedString = [@"About to let a person say Hello!" uppercaseString];
+        NSLog(@"%@", revisedString);
         XYZPerson *person = [XYZPerson person];
         
         [person sayHello];

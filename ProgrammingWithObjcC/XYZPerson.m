@@ -11,12 +11,15 @@
 
 @implementation XYZPerson
 
-+ (id)person {
-    return [[XYZPerson alloc] init];
++ (XYZPerson *)person {
+    return [XYZPerson new];
 }
 
 - (void)sayHello {
-    NSLog(@"Hello, world!");
+    [self saySomething:@"Hello, world!"];
+}
+- (void)saySomething:(NSString *)greeting {
+    NSLog(@"%@", greeting);
 }
 
 
