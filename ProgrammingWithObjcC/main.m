@@ -12,7 +12,7 @@
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
         // insert code here...
-        NSLog(@"About to let a  person say Hello!");
+        NSLog(@"About to let a person say Hello!");
         XYZPerson *person = [XYZPerson person];
         
         [person sayHello];
