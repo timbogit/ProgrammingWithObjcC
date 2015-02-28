@@ -15,7 +15,13 @@
 @property (readonly)NSString  *lastName;
 @property (readonly)NSDate    *dateOfBirth;
 
+@property (readonly) NSString *fullName;
+
 +(XYZPerson *)person;
+
+- (id)initWithFirstName:(NSString *)aFirstName lastName:(NSString *)aLastName;
+- (id)initWithFirstName:(NSString *)aFirstName lastName:(NSString *)aLastName
+            dateOfBirth:(NSDate *)aDOB;
 
 -(void)sayHello;
 -(void)sayGoodbye;

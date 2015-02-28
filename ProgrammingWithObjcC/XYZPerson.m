@@ -15,6 +15,29 @@
     return [self new];
 }
 
+- (id)init {
+    return [self initWithFirstName: @"Tim" lastName:  @"Schmelmer"];
+}
+
+- (id)initWithFirstName:(NSString *)aFirstName lastName:(NSString *)aLastName {
+    return [self initWithFirstName: aFirstName lastName: aLastName dateOfBirth:[NSDate date]];
+}
+
+- (id)initWithFirstName:(NSString *)aFirstName lastName:(NSString *)aLastName
+            dateOfBirth:(NSDate *)aDOB {
+    self = [super init];
+    if (self) {
+        _firstName = aFirstName;
+        _lastName = aLastName;
+        _dateOfBirth = aDOB;
+    }
+    return self;
+}
+
+- (NSString *)fullName {
+    return [NSString stringWithFormat:@"%@ %@", self.firstName, self.lastName];
+}
+
 - (void)sayHello {
     [self saySomething:@"Hello, world!"];
 }

@@ -15,9 +15,12 @@
     return [self new];
 }
 
+- (id)init {
+    return [self initWithFirstName: @"LOUD" lastName:  @"MOUTH"];
+}
+
 - (void)saySomething:(NSString *)greeting {
     [super saySomething:[greeting uppercaseString]];
 }
-
 
 @end
