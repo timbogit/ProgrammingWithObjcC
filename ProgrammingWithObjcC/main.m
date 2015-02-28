@@ -31,6 +31,12 @@ int main(int argc, const char * argv[]) {
             NSLog(@"The second person is not alloc'ed.");
         }
         
+        NSString *number = @"Hello";
+        NSMutableString *fortyTwo = [NSMutableString stringWithString: @"Hello"];
+        NSSet *numberSet =
+        [NSSet setWithObjects:number, fortyTwo, nil];
+        NSLog(@"The count is %lu", (unsigned long)[numberSet count]);
+        
     }
     return 0;
 }
